@@ -1,0 +1,14 @@
+.navbar{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    background: gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar-links{
+    justify-self: end;
+}
+
+.navbar-link{
+    display: inline;
+}
