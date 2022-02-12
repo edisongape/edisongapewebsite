@@ -137,7 +137,7 @@ main{
 }
 
 #main-header-top{
-    height: 100vh;
+    height: 60vh;
     background: linear-gradient(#3b39a7, hsl(241, 49%, 54%));
     background: #3b39a7;
     /*background-image: url("images/purplebg.jpg");*/
@@ -173,6 +173,8 @@ main{
     color: white;
 }
 
-
+.contact{
+    text-align: center;
+}
 /* #373E98 */
 /* #F16775 */
