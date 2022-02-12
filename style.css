@@ -110,7 +110,7 @@ p{
         grid-template-columns: max-content 1fr max-content;
         align-items: center;
         text-align: center;
-        height: 45px;
+        height: 60px;
         padding-left: 15px;
         padding-right: 15px;
         background-color: rgb(255, 186, 121);
@@ -163,6 +163,14 @@ main{
 
 .who-we-are-grid div h3{
     margin: 0;
+}
+
+.footer{
+    background-color: rgb(255, 186, 121);
+    align-items: center;
+    text-align: center;
+    height: 120px;
+    color: white;
 }
 
 
