@@ -113,7 +113,7 @@ p{
         height: 60px;
         padding-left: 15px;
         padding-right: 15px;
-        background-color: rgb(255, 186, 121);
+        background-color: #3b39a7;
     }
     #navbar-desktop button{
         border: none;
@@ -137,15 +137,16 @@ main{
 }
 
 #main-header-top{
-    height: 60vh;
+    height: 100vh;
     background: linear-gradient(#3b39a7, hsl(241, 49%, 54%));
     background: #3b39a7;
-    /*background-image: url("images/purplebg.jpg");*/
+    background-image: url("public/images/books.jpg");
     display: grid;
     grid-template-rows: max-content 1fr;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #3b39a7;
+    font-size:x-large;
 }
 
 
@@ -156,7 +157,7 @@ main{
 }
 
 .who-we-are-grid div{
-    background: rgb(255, 186, 121);
+    background: #3b39a7;
     border-radius: 7px;
     padding: 20px;
 }
@@ -166,10 +167,10 @@ main{
 }
 
 .footer{
-    background-color: rgb(255, 186, 121);
+    background-color: #3b39a7;
     align-items: center;
     text-align: center;
-    height: 140px;
+    height: 145px;
     color: white;
 }
 
