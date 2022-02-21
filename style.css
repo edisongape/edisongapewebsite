@@ -113,7 +113,9 @@ p{
         height: 60px;
         padding-left: 15px;
         padding-right: 15px;
-        background-color: #3b39a7;
+        background-color: white;
+        border-bottom: 200px;
+        border-color: black;
     }
     #navbar-desktop button{
         border: none;
@@ -139,8 +141,7 @@ main{
 #main-header-top{
     height: 100vh;
     background: linear-gradient(#3b39a7, hsl(241, 49%, 54%));
-    background: #3b39a7;
-    background-image: url("public/images/books.jpg");
+    background: white;
     display: grid;
     grid-template-rows: max-content 1fr;
     align-items: center;
@@ -179,3 +180,9 @@ main{
 }
 /* #373E98 */
 /* #F16775 */
+
+
+
+#cor-img {
+    width: 50px;
+}
