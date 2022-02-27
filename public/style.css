@@ -3,6 +3,12 @@
 html, body{
     margin: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;    
+}
+
 body{
     font-size: 17px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -29,6 +35,7 @@ p{
     font-size: 1em;
 }
 
+
 .background-dim-no-click{
     z-index: 2;
     position: fixed;
@@ -48,6 +55,7 @@ p{
     padding-left: 15px;
     padding-right: 15px;
     height: 45px;
+    width: 100%;
     background-color: white;
 }
 
@@ -62,8 +70,6 @@ p{
 
 #navbar-desktop{
     display: none;
-    background-color: rgba(255, 255, 255, 0);
-    /*border-bottom: 0.01px solid gray;*/
 }
 
 #side-mobile-navbar{
@@ -113,27 +119,36 @@ p{
         display: grid;
         grid-template-columns: max-content 1fr max-content;
         align-items: center;
-        text-align: center;
-        height: 7.5vh;
-        padding-left: 15px;
-        padding-right: 15px;
-        background-color: #df4c73;
-    }
+        height: 55px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #94DAFF;
+    }   
     #navbar-desktop button{
         border: none;
         background: none;
-        padding-left: 15px;
+        padding-left: 10px;
     }
     .navbar-desktop-links{
         justify-self: end;
     }
     .navbar-desktop-links a{
-        color: white;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         font-size: 1.3em;
-        padding-left: 15px;
         font-family: 'Roboto Mono', monospace;
-        margin-right: 2vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar-desktop-links a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+
+    #navbar-desktop-main-button{
+        display: inline-block;
     }
 }
 
@@ -143,10 +158,10 @@ main{
 }
 
 #main-header-top{
+    position: relative;
     height: 100vh;
     background: linear-gradient(#3b39a7, hsl(241, 49%, 54%));
-    background: white;
-    /*background-image: url("images/purplebg.jpg");*/
+    background: #94DAFF;
     display: grid;
     grid-template-rows: max-content 1fr;
     align-items: center;
@@ -172,7 +187,7 @@ main{
 }
 
 .footer{
-    background-color: #286fb4;
+    background-color: #df4c73;
     align-items: center;
     text-align: center;
     height: 140px;
@@ -183,19 +198,16 @@ main{
     text-align: center;
 }
 
-#abstract-art-header {
-    background-image: url("./images/abstractart.png");
+
+#hero-image{
+    margin-left: 0;    
 }
 
 .header-contents {
-    height: 92.5vh;
+    height: 100vh;
 }
 
 
-nav {
-    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);*/
-    /*border-bottom: 10px solid black; */
-}
 /* #373E98 */
 /* #F16775 */
 
@@ -212,8 +224,6 @@ nav {
     font-family: 'Roboto Mono', monospace;
 }
 
-a {
-}
 
 #header-small {
     margin-top: 0;
@@ -222,19 +232,9 @@ a {
     font-family: 'Roboto Mono', monospace;
 }
 
-.btn-pri {
-    margin-top: 5vh;
-    height: 7.5vh;
-    background-color: #B0DDE4;
-    width: 10vw;
-    border-radius: 10px;
-    border: none;
-    color: #286fb4;
-}
 
-.btn-pri:hover{
-    background-color: #b0dde4c5;
-}
+
+
 header{
     height: 100vh;
 }
@@ -286,18 +286,18 @@ section {
     filter: blur(15px);
     background: linear-gradient(
       to left,
-      #ff5770,
-      #e4428d,
-      #c42da8,
-      #9e16c3,
-      #6501de,
-      #9e16c3,
-      #c42da8,
-      #e4428d,
+      #df4c73,
+      #d658cc,
+      #864de4,
+      #7499e7,
+      #286fb4,
+      #7499e7,
+      #864de4,
+      #d658cc,
       #ff5770
     );
     background-size: 200% 200%;
-    animation: animateGlow 1.25s linear infinite;
+    animation: animateGlow 6s linear infinite;
 }
 
 @keyframes animateGlow {
@@ -309,7 +309,37 @@ section {
     }
   }
   
-
-#info {
-    
+.head-icon {
+    size: 5vh;
 }
+
+#hero-button{
+    border: none;
+    background: #df4c73;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 10px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hero-button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.about-us{
+    background: transparent;
+}
+
+.head-icon {
+    display: block;
+    margin: auto;
+}
+
