@@ -1,0 +1,60 @@
+
+$black-text: #0f0f0f;
+$main-background: #e0e5ff;
+$border-radius: 7px;
+$primary-button-color: #b6a5f8a1; 
+
+
+
+@mixin remove-link-style {
+	color: $black-text;
+	text-decoration: none;
+}
+
+@mixin remove-button-style {
+	background: transparent;
+	border: none;
+}
+	
+
+@mixin primary-button-style {
+    border-radius: $border-radius;
+	border: none;
+	padding: 12px;
+	background: $primary-button-color;
+	color: $dark-text-color;
+	font-size: 0.95em;
+	&:hover {
+		background: darken($color: $primary-button-color, $amount: 5%);
+	}
+	&:active {
+		background: darken($color: $primary-button-color, $amount: 10%);
+	}
+}
+
+@mixin primary-a-button-style {
+	cursor: pointer;
+	display: grid;
+	align-items: center;
+	border-radius: $border-radius;
+	padding: 12px;
+	font-size: 0.7em;
+    & > a{
+        @include remove-link-style;
+    }
+	&:hover {
+		background: darken($color: $primary-button-color, $amount: 5%);
+	}
+	&:active {
+        background: darken($color: $primary-button-color, $amount: 10%);
+    }
+    background: $primary-button-color;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.hero-buttons{
+	display: grid;
+	grid-template-columns: max-content max-content;
+	column-gap: 15px;
+}
